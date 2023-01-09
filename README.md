@@ -4,7 +4,7 @@
 - 适用于Ubuntu和树莓派的循环推流脚本
 ```
 //安装screen
-yum -y install screen
+sudo apt install screen
 //创建一个窗口
 screen -S stream
 //下载脚本
