@@ -78,7 +78,7 @@ stream_stop(){
 # 开始菜单设置
 echo -e "${yellow} FFmpeg无人值守循环推流 ${font}"
 echo -e "${red} 请确定此脚本目前是在screen窗口内运行的! ${font}"
-echo -e "${green} 1.安装FFmpeg! ${font}"
+echo -e "${green} 1.安装FFmpeg ${font}"
 echo -e "${green} 2.开始循环推流 ${font}"
 echo -e "${green} 3.停止推流 ${font}"
 start_menu(){
