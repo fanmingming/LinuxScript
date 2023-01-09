@@ -1,6 +1,4 @@
 #!/bin/bash
-PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
-export PATH
 
 # 颜色选择
 red='\033[0;31m'
