@@ -1,7 +1,7 @@
 # LinuxScript
 一些Linux脚本
 ## stream.sh
-- 适用于Ubuntu和树莓派的循环推流脚本
+- 适用于Ubuntu和树莓派系统的循环推流脚本
 ```
 //安装screen
 sudo apt install screen
