@@ -8,7 +8,7 @@ sudo apt install screen
 //创建一个窗口
 screen -S stream
 //下载脚本
-wget --no-check-certificate https://bash.ming.casa/stream.sh
+wget --no-check-certificate https://ls.fanmingming.com/stream.sh
 //执行脚本
 bash stream.sh
 ```
