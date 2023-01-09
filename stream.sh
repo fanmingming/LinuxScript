@@ -23,14 +23,14 @@ fi
 
 stream_start(){
 # 定义推流地址和推流码
-read -p "输入你的推流地址和推流码(rtmp协议):" rtmp
+read -p "输入推流地址和推流码(rtmp协议):" rtmp
 
 # 判断用户输入的地址是否合法
 if [[ $rtmp =~ "rtmp://" ]];then
 	echo -e "${green} 推流地址输入正确,程序将进行下一步操作. ${font}"
   	sleep 2
 	else  
-  	echo -e "${red} 你输入的地址不合法,请重新运行程序并输入! ${font}"
+  	echo -e "${red} 输入的地址不正确,请重新运行程序并输入! ${font}"
   	exit 1
 fi 
 
@@ -40,7 +40,7 @@ read -p "输入视频存放目录 (格式支持mp4,并且要绝对路径,例如/
 # 判断是否需要添加水印
 read -p "是否需要为视频添加水印?水印位置默认在右上方(yes/no):" watermark
 if [ $watermark = "yes" ];then
-	read -p "输入你的水印图片存放绝对路径,例如/opt/image/watermark.jpg (格式支持jpg/png/bmp):" image
+	read -p "输入水印图片存放绝对路径,例如/opt/image/watermark.jpg (格式支持jpg/png/bmp):" image
 	echo -e "${yellow} 添加水印完成,程序将开始推流. ${font}"
 	# 循环
 	while true
@@ -75,7 +75,7 @@ stream_stop(){
 
 # 开始菜单设置
 echo -e "${yellow} FFmpeg无人值守循环推流 ${font}"
-echo -e "${red} 请确定此脚本目前是在screen窗口内运行的! ${font}"
+echo -e "${red} 请确定此脚本是在screen窗口内运行! ${font}"
 echo -e "${green} 1.安装FFmpeg ${font}"
 echo -e "${green} 2.开始循环推流 ${font}"
 echo -e "${green} 3.停止推流 ${font}"
