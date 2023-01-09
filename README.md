@@ -2,7 +2,6 @@
 一些Linux脚本
 ## stream.sh
 - 使用说明
-- 
 ```
 //安装screen
 yum -y install screen
