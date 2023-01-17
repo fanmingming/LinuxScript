@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# CSS服务器脚本 ubuntu 18.04 X64
+
 sudo apt update -y;
 sudo apt upgrade -y;
 
