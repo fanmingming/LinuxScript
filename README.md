@@ -3,12 +3,12 @@
 ## stream.sh
 - 适用于Ubuntu和树莓派系统的循环推流脚本
 ```
-//安装screen
+# 安装screen
 sudo apt install screen
-//创建一个窗口
+# 创建一个窗口
 screen -S stream
-//下载脚本
+# 下载脚本
 wget --no-check-certificate https://ls.fanmingming.com/stream.sh
-//执行脚本
+# 执行脚本
 bash stream.sh
 ```
