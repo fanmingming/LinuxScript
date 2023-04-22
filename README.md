@@ -13,7 +13,7 @@ wget --no-check-certificate https://ls.fanmingming.com/stream.sh
 bash stream.sh
 ```
 
-##Raspi Tunnels
+## Zero Trust Tunnels for Linux_ARM64
 ```
 curl -L --output cloudflared.deb https://ls.fanmingming.com/arm64/cloudflared.deb && 
 
