@@ -8,14 +8,14 @@ sudo apt install screen
 //创建一个窗口
 screen -S stream
 //下载脚本
-wget --no-check-certificate https://ls.fanmingming.com/stream.sh
+wget --no-check-certificate https://linux.fanmingming.com/stream.sh
 //执行脚本
 bash stream.sh
 ```
 
 ## Zero Trust Tunnels for Linux_ARM64
 ```
-curl -L --output cloudflared.deb https://ls.fanmingming.com/arm64/cloudflared.deb && 
+curl -L --output cloudflared.deb https://linux.fanmingming.com/arm64/cloudflared.deb && 
 
 sudo dpkg -i cloudflared.deb && 
 
