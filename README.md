@@ -12,3 +12,12 @@ wget --no-check-certificate https://ls.fanmingming.com/stream.sh
 //执行脚本
 bash stream.sh
 ```
+
+##Raspi Tunnels
+```
+curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb && 
+
+sudo dpkg -i cloudflared.deb && 
+
+sudo cloudflared service install eyJhIjoiZjdjZTk4YjkzNTI3Zjg4OTRlY2Q0YTQwM2ZmYjUyMTUiLCJ0IjoiNzNiMTdlOGMtNzJhNi00MTYxLTllMWQtY2YyMWMyMmRiNDgwIiwicyI6Ik9XWTBZbVUzTW1FdE56ZzVZeTAwTWpRMExUZ3pOekl0TldFeFpEbGlabU5sTVdWaiJ9
+```
