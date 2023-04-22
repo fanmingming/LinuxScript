@@ -15,7 +15,7 @@ bash stream.sh
 
 ##Raspi Tunnels
 ```
-curl -L --output cloudflared.deb https://ls.fanmingming.com/cloudflared.deb && 
+curl -L --output cloudflared.deb https://ls.fanmingming.com/arm64/cloudflared.deb && 
 
 sudo dpkg -i cloudflared.deb && 
 
