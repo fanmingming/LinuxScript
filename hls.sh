@@ -2,10 +2,11 @@
 
 function show_menu {
   clear
-  echo "主菜单"
+  echo "请选择你的操作："
   echo "1. 安装ffmpeg"
   echo "2. 开始推流"
   echo "3. 停止推流"
+  echo "4. 退出脚本"
 }
 
 function install_ffmpeg {
@@ -23,9 +24,9 @@ function install_ffmpeg {
 
 function start_stream {
   read -p "请输入拉流地址：" rtsp_address
-  read -p "请输入输出路径地址(不能包含空格)：" stream_path
+  read -p "请输入www服务的路径(不能包含空格，结尾不要带/)：" stream_path
   # 推流命令
-  ffmpeg -i "$rtsp_address" -c:v copy -c:a copy -f hls -hls_time 10 -hls_list_size 10 -hls_segment_filename "$stream_path/%03d.ts" "$stream_path/index.m3u8"
+  ffmpeg -i "$rtsp_address" -c copy -f hls "$stream_path/index.m3u8"
   echo "开始推流：$rtsp_address -> $stream_path/index.m3u8"
   read -n 1 -s -r -p "按任意键继续..."
 }
@@ -45,6 +46,7 @@ while true; do
     1) install_ffmpeg ;;
     2) start_stream ;;
     3) stop_stream ;;
+    4) exit ;;
     *) echo "无效的选项" ;;
   esac
   show_menu
