@@ -23,5 +23,5 @@ sudo cloudflared service install eyJhIjoiZjdjZTk4YjkzNTI3Zjg4OTRlY2Q0YTQwM2ZmYjU
 ```
 ## 单频道本地推流
 ```
-ffmpeg -i http://10.11.43.21/PLTV/88888912/224/3221226446/10000100000000060000000000870185_0.smil/01.m3u8?fmt=ts2hls -c copy -f hls /DATA/AppData/Nginx Proxy Manager/data/nginx/default_www/live/index.m3u8
+ffmpeg -i http://10.11.43.21/PLTV/88888912/224/3221226446/10000100000000060000000000870185_0.smil/01.m3u8?fmt=ts2hls -c copy -f hls /DATA/AppData/NginxProxyManager/data/nginx/default_www/hls/cctv1.m3u8
 ```
