@@ -23,7 +23,7 @@ screen -S hls
 //下载脚本
 wget https://ls.fanmingming.com/hls.sh
 //执行脚本
-bash stream.sh
+bash hls.sh
 ```
 
 ## Zero Trust Tunnels for Linux_ARM64
