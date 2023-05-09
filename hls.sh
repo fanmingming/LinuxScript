@@ -2,7 +2,7 @@
 
 function show_menu {
   clear
-  echo "请选择你的操作："
+  echo "请选择你的操作(输入数字)："
   echo "1. 安装ffmpeg"
   echo "2. 开始推流"
   echo "3. 停止推流"
@@ -26,7 +26,8 @@ function start_stream {
   read -p "请输入拉流地址：" rtsp_address
   read -p "请输入www服务的路径(不能包含空格，结尾不要带/)：" stream_path
   # 推流命令
-  ffmpeg -i "$rtsp_address" -c copy -f hls "$stream_path/index.m3u8"
+  # ffmpeg -i "$rtsp_address" -c copy -f hls "$stream_path/index.m3u8"
+  ffmpeg -i "$rtsp_address" -c:v copy -c:a copy -hls_flags delete_segments -hls_segment_filename "$stream_path/index_%03d.ts" -hls_time 10 "$stream_path/index.m3u8"
   echo "开始推流：$rtsp_address -> $stream_path/index.m3u8"
   read -n 1 -s -r -p "按任意键继续..."
 }
