@@ -34,8 +34,8 @@ function start_stream {
 
 function stop_stream {
   # 停止推流命令
-	screen -S hls -X quit
-	killall ffmpeg
+  screen -S hls -X quit
+  killall ffmpeg
   echo "停止所有推流"
   read -n 1 -s -r -p "按任意键继续..."
 }
