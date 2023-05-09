@@ -13,6 +13,19 @@ wget --no-check-certificate https://ls.fanmingming.com/stream.sh
 bash stream.sh
 ```
 
+## hls.sh
+- 适用于Ubuntu、Debian和Raspberry Pi OS的拉流推流脚本
+```
+//安装screen
+sudo apt install screen
+//创建一个窗口
+screen -S hls
+//下载脚本
+wget https://ls.fanmingming.com/hls.sh
+//执行脚本
+bash stream.sh
+```
+
 ## Zero Trust Tunnels for Linux_ARM64
 ```
 curl -L --output cloudflared.deb https://ls.fanmingming.com/arm64/cloudflared.deb && 
@@ -20,8 +33,4 @@ curl -L --output cloudflared.deb https://ls.fanmingming.com/arm64/cloudflared.de
 sudo dpkg -i cloudflared.deb && 
 
 sudo cloudflared service install eyJhIjoiZjdjZTk4YjkzNTI3Zjg4OTRlY2Q0YTQwM2ZmYjUyMTUiLCJ0IjoiNzNiMTdlOGMtNzJhNi00MTYxLTllMWQtY2YyMWMyMmRiNDgwIiwicyI6Ik9XWTBZbVUzTW1FdE56ZzVZeTAwTWpRMExUZ3pOekl0TldFeFpEbGlabU5sTVdWaiJ9
-```
-## 单频道本地推流
-```
-ffmpeg -i http://10.11.43.21/PLTV/88888912/224/3221226446/10000100000000060000000000870185_0.smil/01.m3u8?fmt=ts2hls -c copy -f hls /DATA/AppData/NginxProxyManager/data/nginx/default_www/hls/cctv1.m3u8
 ```
