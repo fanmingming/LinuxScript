@@ -27,15 +27,15 @@ function start_stream {
   read -p "请输入www服务的路径(不能包含空格，结尾不要带/)：" stream_path
   # 推流命令
   # ffmpeg -i "$rtsp_address" -c copy -f hls "$stream_path/index.m3u8"
-  ffmpeg -i "$rtsp_address" -c:v copy -c:a copy -hls_flags delete_segments -hls_segment_filename "$stream_path/index_%03d.ts" -hls_time 10 "$stream_path/index.m3u8"
+  sudo ffmpeg -i "$rtsp_address" -c:v copy -c:a copy -hls_flags delete_segments -hls_segment_filename "$stream_path/index_%03d.ts" -hls_time 10 "$stream_path/index.m3u8"
   echo "开始推流：$rtsp_address -> $stream_path/index.m3u8"
   read -n 1 -s -r -p "按任意键继续..."
 }
 
 function stop_stream {
   # 停止推流命令
-  screen -S hls -X quit
-  killall ffmpeg
+  sudo screen -S hls -X quit
+  sudo killall ffmpeg
   echo "停止所有推流"
   read -n 1 -s -r -p "按任意键继续..."
 }
