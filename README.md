@@ -1,7 +1,7 @@
 # LinuxScript
 一些Linux脚本
 ## stream.sh
-- 适用于Ubuntu、Debian和Raspberry Pi OS的循环直播推流脚本
+- 【无人值守直播】将本地指定目录下的MP4文件循环推送到B站或Youtube等直播平台的脚本(适用于Ubuntu、Debian和RaspberryPi OS等Linux系统)
 ```
 //安装screen
 sudo apt install screen
@@ -14,7 +14,7 @@ bash stream.sh
 ```
 
 ## hls.sh
-- 适用于Ubuntu、Debian和Raspberry Pi OS的拉流推流脚本
+- 通过ffmpeg利用Web环境实现拉取任意直播流并推流的脚本(适用于Ubuntu、Debian和RaspberryPi OS等Linux系统)
 ```
 //安装screen
 sudo apt install screen
@@ -27,6 +27,7 @@ bash hls.sh
 ```
 
 ## Zero Trust Tunnels for Linux_ARM64
+- 利用Tunnels实现内网穿透访问的脚本
 ```
 curl -L --output cloudflared.deb https://ls.fanmingming.com/arm64/cloudflared.deb && 
 
