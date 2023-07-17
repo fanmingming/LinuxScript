@@ -25,13 +25,3 @@ wget https://ls.fanmingming.com/hls.sh
 //执行脚本
 bash hls.sh
 ```
-
-## Zero Trust Tunnels for Linux_ARM64
-- 利用Tunnels实现内网穿透访问的脚本
-```
-curl -L --output cloudflared.deb https://ls.fanmingming.com/arm64/cloudflared.deb && 
-
-sudo dpkg -i cloudflared.deb && 
-
-sudo cloudflared service install eyJhIjoiZjdjZTk4YjkzNTI3Zjg4OTRlY2Q0YTQwM2ZmYjUyMTUiLCJ0IjoiNzNiMTdlOGMtNzJhNi00MTYxLTllMWQtY2YyMWMyMmRiNDgwIiwicyI6Ik9XWTBZbVUzTW1FdE56ZzVZeTAwTWpRMExUZ3pOekl0TldFeFpEbGlabU5sTVdWaiJ9
-```
