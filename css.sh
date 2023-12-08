@@ -1,6 +1,6 @@
 #!/bin/bash
-
 # CSS服务器脚本 ubuntu 18.04 X64
+# https://developer.valvesoftware.com/wiki/SteamCMD:zh-cn
 
 sudo apt update -y;
 sudo apt upgrade -y;
